@@ -444,6 +444,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
          <li><a href="#_scenario_outline_invalid_result_for_addition_of_two_numbers">2.1.4. Scenario Outline: Invalid result for addition of two numbers</a></li> 
          <li><a href="#_scenario_outline_invalid_result_for_addition_of_two_numbers_2">2.1.5. Scenario Outline: Invalid result for addition of two numbers</a></li> 
          <li><a href="#_scenario_successful_response_type_is_of_xml_format">2.1.6. Scenario: Successful response type is of XML format</a></li> 
+         <li><a href="#_scenario_outline_error_result_for_any_invalid_number_span_class_icon_red_i_class_fa_fa_thumbs_down_title_failed_i_span">2.1.7. Scenario Outline: Error result for any invalid number <span class="icon red"><i class="fa fa-thumbs-down" title="Failed"></i></span></a></li> 
         </ul> </li> 
       </ul> </li> 
     </ul> 
@@ -479,16 +480,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
       <tfoot> 
        <tr> 
         <td class="tableblock halign-center valign-top"><p class="tableblock"><code>6</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>1</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>7</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>25</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>1</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>1</code></p></td> 
         <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>6</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>24</code></p></td> 
         <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
         <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>24</code></p></td> 
-        <td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><code>461ms</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>27</code></p></td> 
+        <td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><code>481ms</code></p></td> 
        </tr> 
       </tfoot> 
       <tbody> 
@@ -511,17 +512,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
        </tr> 
        <tr> 
         <td class="tableblock halign-center valign-top"><p class="tableblock"><code>6</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>1</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>7</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>25</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>1</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>1</code></p></td> 
         <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>6</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>24</code></p></td> 
         <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
         <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>0</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>24</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>461ms</code></p></td> 
-        <td class="tableblock halign-center valign-top"><p class="tableblock"><code><span class="green"><strong>passed</strong></span></code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>27</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code>481ms</code></p></td> 
+        <td class="tableblock halign-center valign-top"><p class="tableblock"><code><span class="red"><strong>failed</strong></span></code></p></td> 
        </tr> 
        <tr> 
         <td class="tableblock halign-center valign-top" colspan="12"><p class="tableblock"><code><strong>Totals</strong></code></p></td> 
@@ -558,7 +559,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
          <div class="exampleblock"> 
           <div class="content"> 
            <div class="paragraph"> 
-            <p>I have any two valid numbers 1 1 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(251ms)</span></p> 
+            <p>I have any two valid numbers 1 1 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(252ms)</span></p> 
            </div> 
           </div> 
          </div> 
@@ -572,7 +573,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
          <div class="exampleblock"> 
           <div class="content"> 
            <div class="paragraph"> 
-            <p>I send a request to the service with above numbers <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(077ms)</span></p> 
+            <p>I send a request to the service with above numbers <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(078ms)</span></p> 
            </div> 
           </div> 
          </div> 
@@ -600,7 +601,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
          <div class="exampleblock"> 
           <div class="content"> 
            <div class="paragraph"> 
-            <p>The sum of two numbers is 2 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(080ms)</span></p> 
+            <p>The sum of two numbers is 2 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(078ms)</span></p> 
            </div> 
           </div> 
          </div> 
@@ -747,7 +748,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
          <div class="exampleblock"> 
           <div class="content"> 
            <div class="paragraph"> 
-            <p>I have any two valid numbers 1 1 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(004ms)</span></p> 
+            <p>I have any two valid numbers 1 1 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(005ms)</span></p> 
            </div> 
           </div> 
          </div> 
@@ -789,7 +790,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
          <div class="exampleblock"> 
           <div class="content"> 
            <div class="paragraph"> 
-            <p>The sum of two numbers is not equal to 3 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(001ms)</span></p> 
+            <p>The sum of two numbers is not equal to 3 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(002ms)</span></p> 
            </div> 
           </div> 
          </div> 
@@ -810,7 +811,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
          <div class="exampleblock"> 
           <div class="content"> 
            <div class="paragraph"> 
-            <p>I have any two valid numbers 2 1 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(006ms)</span></p> 
+            <p>I have any two valid numbers 2 1 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(005ms)</span></p> 
            </div> 
           </div> 
          </div> 
@@ -852,7 +853,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
          <div class="exampleblock"> 
           <div class="content"> 
            <div class="paragraph"> 
-            <p>The sum of two numbers is not equal to 5 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(001ms)</span></p> 
+            <p>The sum of two numbers is not equal to 5 <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(000ms)</span></p> 
            </div> 
           </div> 
          </div> 
@@ -931,14 +932,73 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
         </div> 
        </div> 
       </div> 
+      <div class="sect3"> 
+       <h4 id="_scenario_outline_error_result_for_any_invalid_number_span_class_icon_red_i_class_fa_fa_thumbs_down_title_failed_i_span"><a class="anchor" href="#_scenario_outline_error_result_for_any_invalid_number_span_class_icon_red_i_class_fa_fa_thumbs_down_title_failed_i_span"></a>2.1.7. Scenario Outline: Error result for any invalid number <span class="icon red"><i class="fa fa-thumbs-down" title="Failed"></i></span></h4> 
+       <div class="sidebarblock"> 
+        <div class="content"> 
+         <div class="dlist"> 
+          <dl> 
+           <dt class="hdlist1">
+             Given 
+           </dt> 
+          </dl> 
+         </div> 
+         <div class="exampleblock"> 
+          <div class="content"> 
+           <div class="paragraph"> 
+            <p>I have any invalid numbers 1 a <span class="icon green"><i class="fa fa-thumbs-up" title="Passed"></i></span> <span class="small right">(013ms)</span></p> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="dlist"> 
+          <dl> 
+           <dt class="hdlist1">
+             When 
+           </dt> 
+          </dl> 
+         </div> 
+         <div class="exampleblock"> 
+          <div class="content"> 
+           <div class="paragraph"> 
+            <p>I send a request to the service with above numbers <span class="icon red"><i class="fa fa-thumbs-down" title="Failed"></i></span> <span class="small right">(005ms)</span></p> 
+           </div> 
+           <div class="admonitionblock important"> 
+            <table> 
+             <tbody> 
+              <tr> 
+               <td class="icon"> <i class="fa icon-important" title="Important"></i> </td> 
+               <td class="content"> org.springframework.web.client.HttpClientErrorException: 400 null<br> at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:63)<br> at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)<br> at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)<br> at org.springframework.web.client.RestTemplate.execute…​ </td> 
+              </tr> 
+             </tbody> 
+            </table> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="dlist"> 
+          <dl> 
+           <dt class="hdlist1">
+             Then 
+           </dt> 
+          </dl> 
+         </div> 
+         <div class="exampleblock"> 
+          <div class="content"> 
+           <div class="paragraph"> 
+            <p>I get successful response with status code '400' <span class="icon purple"><i class="fa fa-thumbs-down" title="Skipped"></i></span> <span class="small right">(000ms)</span></p> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
      </div> 
     </div> 
    </div> 
   </div> 
   <div id="footer" style="color:gray;font-size:11px">
     Generated by 
-   <a href="https://github.com/rmpestano/cukedoctor" target="_blank"> Cukedoctor 1.0.6</a> - 6/08/2017 7:39:50 PM 
-   <span style="float:right;font-size:11px"> Execution time: 2.552 seconds</span> 
+   <a href="https://github.com/rmpestano/cukedoctor" target="_blank"> Cukedoctor 1.0.6</a> - 6/08/2017 7:46:19 PM 
+   <span style="float:right;font-size:11px"> Execution time: 2.658 seconds</span> 
   </div> 
   <style>  
 

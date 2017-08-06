@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 251483519,
+              "duration": 252722187,
               "status": "passed"
             },
             "line": 8,
@@ -38,7 +38,7 @@
           },
           {
             "result": {
-              "duration": 77960884,
+              "duration": 78367187,
               "status": "passed"
             },
             "line": 9,
@@ -50,7 +50,7 @@
           },
           {
             "result": {
-              "duration": 3112018,
+              "duration": 3759064,
               "status": "passed"
             },
             "line": 10,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 80510087,
+              "duration": 78979896,
               "status": "passed"
             },
             "line": 11,
@@ -105,7 +105,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6049471,
+              "duration": 6310842,
               "status": "passed"
             },
             "line": 8,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 3251695,
+              "duration": 3295080,
               "status": "passed"
             },
             "line": 9,
@@ -143,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 112330,
+              "duration": 119249,
               "status": "passed"
             },
             "line": 10,
@@ -161,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 1059809,
+              "duration": 1091802,
               "status": "passed"
             },
             "line": 11,
@@ -198,7 +198,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5287951,
+              "duration": 5194137,
               "status": "passed"
             },
             "line": 8,
@@ -224,7 +224,7 @@
           },
           {
             "result": {
-              "duration": 2598985,
+              "duration": 2600414,
               "status": "passed"
             },
             "line": 9,
@@ -236,7 +236,7 @@
           },
           {
             "result": {
-              "duration": 81091,
+              "duration": 86778,
               "status": "passed"
             },
             "line": 10,
@@ -254,7 +254,7 @@
           },
           {
             "result": {
-              "duration": 829628,
+              "duration": 887569,
               "status": "passed"
             },
             "line": 11,
@@ -291,7 +291,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4923186,
+              "duration": 5653004,
               "status": "passed"
             },
             "line": 19,
@@ -317,7 +317,7 @@
           },
           {
             "result": {
-              "duration": 2920251,
+              "duration": 2594209,
               "status": "passed"
             },
             "line": 20,
@@ -329,7 +329,7 @@
           },
           {
             "result": {
-              "duration": 112117,
+              "duration": 84551,
               "status": "passed"
             },
             "line": 21,
@@ -347,7 +347,7 @@
           },
           {
             "result": {
-              "duration": 1997382,
+              "duration": 2740233,
               "status": "passed"
             },
             "line": 22,
@@ -384,7 +384,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6905173,
+              "duration": 5977531,
               "status": "passed"
             },
             "line": 19,
@@ -410,7 +410,7 @@
           },
           {
             "result": {
-              "duration": 2804488,
+              "duration": 2281023,
               "status": "passed"
             },
             "line": 20,
@@ -422,7 +422,7 @@
           },
           {
             "result": {
-              "duration": 116176,
+              "duration": 92139,
               "status": "passed"
             },
             "line": 21,
@@ -440,7 +440,7 @@
           },
           {
             "result": {
-              "duration": 1237236,
+              "duration": 945128,
               "status": "passed"
             },
             "line": 22,
@@ -477,7 +477,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5021514,
+              "duration": 5300441,
               "status": "passed"
             },
             "line": 29,
@@ -499,7 +499,7 @@
           },
           {
             "result": {
-              "duration": 2661123,
+              "duration": 2402952,
               "status": "passed"
             },
             "line": 30,
@@ -511,7 +511,7 @@
           },
           {
             "result": {
-              "duration": 93703,
+              "duration": 83288,
               "status": "passed"
             },
             "line": 31,
@@ -529,7 +529,7 @@
           },
           {
             "result": {
-              "duration": 153222,
+              "duration": 99059,
               "status": "passed"
             },
             "line": 32,
@@ -543,6 +543,74 @@
               "line": 33,
               "value": "\u003cAddition\u003e\n\u003cfirstnumber\u003e1\u003c/firstnumber\u003e\n\u003csecondnumber\u003e2\u003c/secondnumber\u003e\n\u003cresult\u003e3\u003c/result\u003e\n\u003c/Addition\u003e"
             }
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Error result for any invalid number",
+        "description": "",
+        "id": "addition;error-result-for-any-invalid-number;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13736233,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I have any invalid numbers 1 a",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 27
+                }
+              ],
+              "location": "AdditionSteps.iHaveAnyInvalidNumbersA(int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5866171,
+              "error_message": "org.springframework.web.client.HttpClientErrorException: 400 null\n\tat org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:63)\n\tat org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)\n\tat org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)\n\tat org.springframework.web.client.RestTemplate.execute(RestTemplate.java:621)\n\tat org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:540)\n\tat stepdefinitions.AdditionSteps.iSendARequestToTheServiceWithAboveNumbers(AdditionSteps.java:68)\n\tat ✽.When I send a request to the service with above numbers(addition.feature:43)\n",
+              "status": "failed"
+            },
+            "line": 43,
+            "name": "I send a request to the service with above numbers",
+            "match": {
+              "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "I get successful response with status code \u0027400\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@addition"
           }
         ]
       }

@@ -35,19 +35,19 @@
 
 12+^|*<<Addition>>*
 |6
+|1
+|7
+|25
+|1
+|1
 |0
-|6
-|24
 |0
 |0
-|0
-|0
-|0
-|24
-|461ms
-|[green]#*passed*#
+|27
+|481ms
+|[red]#*failed*#
 12+^|*Totals*
-|6|0|6|24|0|0|0|0|0|24 2+|461ms
+|6|1|7|25|1|1|0|0|0|27 2+|481ms
 |===
 
 == *Features*
@@ -66,11 +66,11 @@ so that I dont need to use a calculator
 ****
 Given ::
 =====
-I have any two valid numbers 1 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(251ms)#
+I have any two valid numbers 1 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(252ms)#
 =====
 When ::
 =====
-I send a request to the service with above numbers icon:thumbs-up[role="green",title="Passed"] [small right]#(077ms)#
+I send a request to the service with above numbers icon:thumbs-up[role="green",title="Passed"] [small right]#(078ms)#
 =====
 Then ::
 =====
@@ -78,7 +78,7 @@ I get successful response with status code '200' icon:thumbs-up[role="green",tit
 =====
 And ::
 =====
-The sum of two numbers is 2 icon:thumbs-up[role="green",title="Passed"] [small right]#(080ms)#
+The sum of two numbers is 2 icon:thumbs-up[role="green",title="Passed"] [small right]#(078ms)#
 =====
 ****
 
@@ -129,7 +129,7 @@ The sum of two numbers is -2 icon:thumbs-up[role="green",title="Passed"] [small 
 ****
 Given ::
 =====
-I have any two valid numbers 1 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(004ms)#
+I have any two valid numbers 1 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(005ms)#
 =====
 When ::
 =====
@@ -141,7 +141,7 @@ I get successful response with status code '200' icon:thumbs-up[role="green",tit
 =====
 And ::
 =====
-The sum of two numbers is not equal to 3 icon:thumbs-up[role="green",title="Passed"] [small right]#(001ms)#
+The sum of two numbers is not equal to 3 icon:thumbs-up[role="green",title="Passed"] [small right]#(002ms)#
 =====
 ****
 
@@ -150,7 +150,7 @@ The sum of two numbers is not equal to 3 icon:thumbs-up[role="green",title="Pass
 ****
 Given ::
 =====
-I have any two valid numbers 2 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(006ms)#
+I have any two valid numbers 2 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(005ms)#
 =====
 When ::
 =====
@@ -162,7 +162,7 @@ I get successful response with status code '200' icon:thumbs-up[role="green",tit
 =====
 And ::
 =====
-The sum of two numbers is not equal to 5 icon:thumbs-up[role="green",title="Passed"] [small right]#(001ms)#
+The sum of two numbers is not equal to 5 icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
 =====
 ****
 
@@ -193,6 +193,30 @@ The response type is in XML format: icon:thumbs-up[role="green",title="Passed"] 
 </Addition>
 
 ----
+=====
+****
+
+==== Scenario Outline: Error result for any invalid number icon:thumbs-down[role="red",title="Failed"]
+
+****
+Given ::
+=====
+I have any invalid numbers 1 a icon:thumbs-up[role="green",title="Passed"] [small right]#(013ms)#
+=====
+When ::
+=====
+I send a request to the service with above numbers icon:thumbs-down[role="red",title="Failed"] [small right]#(005ms)#
+
+IMPORTANT: org.springframework.web.client.HttpClientErrorException: 400 null
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)
+	at org.springframework.web.client.RestTemplate.execute...
+
+=====
+Then ::
+=====
+I get successful response with status code '400' icon:thumbs-down[role="purple",title="Skipped"] [small right]#(000ms)#
 =====
 ****
 
