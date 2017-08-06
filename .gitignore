@@ -35,7 +35,6 @@ local.properties
 .buildpath
 
 # sbteclipse plugin
-target/
 test-output/
 
 # Tern plugin

@@ -1,0 +1,198 @@
+:toc: left
+:backend: pdf
+:doctitle: Living Documentation
+:doctype: book
+:icons: font
+:numbered:
+:!linkcss:
+:sectanchors:
+:sectlink:
+:docinfo:
+:source-highlighter: highlightjs
+:toclevels: 3
+:revnumber: 0.0.1-SNAPSHOT
+:hardbreaks:
+
+= *Living Documentation*
+
+== *Summary*
+[cols="12*^m", options="header,footer"]
+|===
+3+|Scenarios 7+|Steps 2+|Features: 1
+
+|[green]#*Passed*#
+|[red]#*Failed*#
+|Total
+|[green]#*Passed*#
+|[red]#*Failed*#
+|[purple]#*Skipped*#
+|[maroon]#*Pending*#
+|[yellow]#*Undefined*#
+|[blue]#*Missing*#
+|Total
+|Duration
+|Status
+
+12+^|*<<Addition>>*
+|6
+|0
+|6
+|24
+|0
+|0
+|0
+|0
+|0
+|24
+|461ms
+|[green]#*passed*#
+12+^|*Totals*
+|6|0|6|24|0|0|0|0|0|24 2+|461ms
+|===
+
+== *Features*
+
+[[Addition, Addition]]
+=== *Addition*
+
+****
+As manager of LightBox
+I want to build a service to add two numbers
+so that I dont need to use a calculator
+****
+
+==== Scenario Outline: Valid result for addition of two numbers
+
+****
+Given ::
+=====
+I have any two valid numbers 1 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(251ms)#
+=====
+When ::
+=====
+I send a request to the service with above numbers icon:thumbs-up[role="green",title="Passed"] [small right]#(077ms)#
+=====
+Then ::
+=====
+I get successful response with status code '200' icon:thumbs-up[role="green",title="Passed"] [small right]#(003ms)#
+=====
+And ::
+=====
+The sum of two numbers is 2 icon:thumbs-up[role="green",title="Passed"] [small right]#(080ms)#
+=====
+****
+
+==== Scenario Outline: Valid result for addition of two numbers
+
+****
+Given ::
+=====
+I have any two valid numbers 2 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(006ms)#
+=====
+When ::
+=====
+I send a request to the service with above numbers icon:thumbs-up[role="green",title="Passed"] [small right]#(003ms)#
+=====
+Then ::
+=====
+I get successful response with status code '200' icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+=====
+And ::
+=====
+The sum of two numbers is 3 icon:thumbs-up[role="green",title="Passed"] [small right]#(001ms)#
+=====
+****
+
+==== Scenario Outline: Valid result for addition of two numbers
+
+****
+Given ::
+=====
+I have any two valid numbers -1 -1 icon:thumbs-up[role="green",title="Passed"] [small right]#(005ms)#
+=====
+When ::
+=====
+I send a request to the service with above numbers icon:thumbs-up[role="green",title="Passed"] [small right]#(002ms)#
+=====
+Then ::
+=====
+I get successful response with status code '200' icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+=====
+And ::
+=====
+The sum of two numbers is -2 icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+=====
+****
+
+==== Scenario Outline: Invalid result for addition of two numbers
+
+****
+Given ::
+=====
+I have any two valid numbers 1 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(004ms)#
+=====
+When ::
+=====
+I send a request to the service with above numbers icon:thumbs-up[role="green",title="Passed"] [small right]#(002ms)#
+=====
+Then ::
+=====
+I get successful response with status code '200' icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+=====
+And ::
+=====
+The sum of two numbers is not equal to 3 icon:thumbs-up[role="green",title="Passed"] [small right]#(001ms)#
+=====
+****
+
+==== Scenario Outline: Invalid result for addition of two numbers
+
+****
+Given ::
+=====
+I have any two valid numbers 2 1 icon:thumbs-up[role="green",title="Passed"] [small right]#(006ms)#
+=====
+When ::
+=====
+I send a request to the service with above numbers icon:thumbs-up[role="green",title="Passed"] [small right]#(002ms)#
+=====
+Then ::
+=====
+I get successful response with status code '200' icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+=====
+And ::
+=====
+The sum of two numbers is not equal to 5 icon:thumbs-up[role="green",title="Passed"] [small right]#(001ms)#
+=====
+****
+
+==== Scenario: Successful response type is of XML format
+
+****
+Given ::
+=====
+I have any two valid numbers '1' '2' icon:thumbs-up[role="green",title="Passed"] [small right]#(005ms)#
+=====
+When ::
+=====
+I send a request to the service with above numbers icon:thumbs-up[role="green",title="Passed"] [small right]#(002ms)#
+=====
+Then ::
+=====
+I get successful response with status code '200' icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+=====
+And ::
+=====
+The response type is in XML format: icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+----
+
+<Addition>
+<firstnumber>1</firstnumber>
+<secondnumber>2</secondnumber>
+<result>3</result>
+</Addition>
+
+----
+=====
+****
+
