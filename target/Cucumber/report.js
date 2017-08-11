@@ -140,14 +140,14 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
 });
 formatter.result({
-  "duration": 252722187,
+  "duration": 255163842,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 78367187,
+  "duration": 82833291,
   "status": "passed"
 });
 formatter.match({
@@ -160,7 +160,7 @@ formatter.match({
   "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
 });
 formatter.result({
-  "duration": 3759064,
+  "duration": 3191237,
   "status": "passed"
 });
 formatter.match({
@@ -173,7 +173,7 @@ formatter.match({
   "location": "AdditionSteps.theSumOfTwoNumbersIs(String)"
 });
 formatter.result({
-  "duration": 78979896,
+  "duration": 84037338,
   "status": "passed"
 });
 formatter.scenario({
@@ -231,14 +231,14 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
 });
 formatter.result({
-  "duration": 6310842,
+  "duration": 6397538,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 3295080,
+  "duration": 3638517,
   "status": "passed"
 });
 formatter.match({
@@ -251,7 +251,7 @@ formatter.match({
   "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
 });
 formatter.result({
-  "duration": 119249,
+  "duration": 98624,
   "status": "passed"
 });
 formatter.match({
@@ -264,7 +264,7 @@ formatter.match({
   "location": "AdditionSteps.theSumOfTwoNumbersIs(String)"
 });
 formatter.result({
-  "duration": 1091802,
+  "duration": 1273974,
   "status": "passed"
 });
 formatter.scenario({
@@ -322,14 +322,14 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
 });
 formatter.result({
-  "duration": 5194137,
+  "duration": 6040158,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 2600414,
+  "duration": 2575582,
   "status": "passed"
 });
 formatter.match({
@@ -342,7 +342,7 @@ formatter.match({
   "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
 });
 formatter.result({
-  "duration": 86778,
+  "duration": 86397,
   "status": "passed"
 });
 formatter.match({
@@ -355,257 +355,11 @@ formatter.match({
   "location": "AdditionSteps.theSumOfTwoNumbersIs(String)"
 });
 formatter.result({
-  "duration": 887569,
+  "duration": 1587148,
   "status": "passed"
 });
-formatter.scenarioOutline({
+formatter.scenario({
   "line": 18,
-  "name": "Invalid result for addition of two numbers",
-  "description": "",
-  "id": "addition;invalid-result-for-addition-of-two-numbers",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 19,
-  "name": "I have any two valid numbers \u003cfirstnumber\u003e \u003csecondnumber\u003e",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 20,
-  "name": "I send a request to the service with above numbers",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 21,
-  "name": "I get successful response with status code \u0027200\u0027",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "The sum of two numbers is not equal to \u003csum\u003e",
-  "keyword": "And "
-});
-formatter.examples({
-  "line": 23,
-  "name": "",
-  "description": "",
-  "id": "addition;invalid-result-for-addition-of-two-numbers;",
-  "rows": [
-    {
-      "cells": [
-        "firstnumber",
-        "secondnumber",
-        "sum"
-      ],
-      "line": 24,
-      "id": "addition;invalid-result-for-addition-of-two-numbers;;1"
-    },
-    {
-      "cells": [
-        "1",
-        "1",
-        "3"
-      ],
-      "line": 25,
-      "id": "addition;invalid-result-for-addition-of-two-numbers;;2"
-    },
-    {
-      "cells": [
-        "2",
-        "1",
-        "5"
-      ],
-      "line": 26,
-      "id": "addition;invalid-result-for-addition-of-two-numbers;;3"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 25,
-  "name": "Invalid result for addition of two numbers",
-  "description": "",
-  "id": "addition;invalid-result-for-addition-of-two-numbers;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@addition"
-    }
-  ]
-});
-formatter.step({
-  "line": 19,
-  "name": "I have any two valid numbers 1 1",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 20,
-  "name": "I send a request to the service with above numbers",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 21,
-  "name": "I get successful response with status code \u0027200\u0027",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "The sum of two numbers is not equal to 3",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 29
-    },
-    {
-      "val": "1",
-      "offset": 31
-    }
-  ],
-  "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
-});
-formatter.result({
-  "duration": 5653004,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
-});
-formatter.result({
-  "duration": 2594209,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "200",
-      "offset": 44
-    }
-  ],
-  "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
-});
-formatter.result({
-  "duration": 84551,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 39
-    }
-  ],
-  "location": "AdditionSteps.theSumOfTwoNumbersIsNotEqualTo(int)"
-});
-formatter.result({
-  "duration": 2740233,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 26,
-  "name": "Invalid result for addition of two numbers",
-  "description": "",
-  "id": "addition;invalid-result-for-addition-of-two-numbers;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@addition"
-    }
-  ]
-});
-formatter.step({
-  "line": 19,
-  "name": "I have any two valid numbers 2 1",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 20,
-  "name": "I send a request to the service with above numbers",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 21,
-  "name": "I get successful response with status code \u0027200\u0027",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "The sum of two numbers is not equal to 5",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 29
-    },
-    {
-      "val": "1",
-      "offset": 31
-    }
-  ],
-  "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
-});
-formatter.result({
-  "duration": 5977531,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
-});
-formatter.result({
-  "duration": 2281023,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "200",
-      "offset": 44
-    }
-  ],
-  "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
-});
-formatter.result({
-  "duration": 92139,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "5",
-      "offset": 39
-    }
-  ],
-  "location": "AdditionSteps.theSumOfTwoNumbersIsNotEqualTo(int)"
-});
-formatter.result({
-  "duration": 945128,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 28,
   "name": "Successful response type is of XML format",
   "description": "",
   "id": "addition;successful-response-type-is-of-xml-format",
@@ -613,27 +367,27 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 29,
+  "line": 19,
   "name": "I have any two valid numbers \u00271\u0027 \u00272\u0027",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 30,
+  "line": 20,
   "name": "I send a request to the service with above numbers",
   "keyword": "When "
 });
 formatter.step({
-  "line": 31,
+  "line": 21,
   "name": "I get successful response with status code \u0027200\u0027",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 32,
+  "line": 22,
   "name": "The response type is in XML format:",
   "keyword": "And ",
   "doc_string": {
     "content_type": "",
-    "line": 33,
+    "line": 23,
     "value": "\u003cAddition\u003e\n\u003cfirstnumber\u003e1\u003c/firstnumber\u003e\n\u003csecondnumber\u003e2\u003c/secondnumber\u003e\n\u003cresult\u003e3\u003c/result\u003e\n\u003c/Addition\u003e"
   }
 });
@@ -651,14 +405,14 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyTwoValidNumbers(int,int)"
 });
 formatter.result({
-  "duration": 5300441,
+  "duration": 5195197,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 2402952,
+  "duration": 3432649,
   "status": "passed"
 });
 formatter.match({
@@ -671,18 +425,18 @@ formatter.match({
   "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
 });
 formatter.result({
-  "duration": 83288,
+  "duration": 112505,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.theResponseTypeIsInXMLFormat(String)"
 });
 formatter.result({
-  "duration": 99059,
+  "duration": 105897,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 41,
+  "line": 31,
   "name": "Error result for any invalid number",
   "description": "",
   "id": "addition;error-result-for-any-invalid-number",
@@ -690,22 +444,22 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 42,
+  "line": 32,
   "name": "I have any invalid numbers \u003cfirstnumber\u003e \u003csecondnumber\u003e",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 43,
+  "line": 33,
   "name": "I send a request to the service with above numbers",
   "keyword": "When "
 });
 formatter.step({
-  "line": 44,
-  "name": "I get successful response with status code \u0027400\u0027",
+  "line": 34,
+  "name": "I get bad request error response with status code \u0027400\u0027",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 45,
+  "line": 35,
   "name": "",
   "description": "",
   "id": "addition;error-result-for-any-invalid-number;",
@@ -716,7 +470,7 @@ formatter.examples({
         "secondnumber",
         "sum"
       ],
-      "line": 46,
+      "line": 36,
       "id": "addition;error-result-for-any-invalid-number;;1"
     },
     {
@@ -725,14 +479,14 @@ formatter.examples({
         "a",
         "2"
       ],
-      "line": 47,
+      "line": 37,
       "id": "addition;error-result-for-any-invalid-number;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 47,
+  "line": 37,
   "name": "Error result for any invalid number",
   "description": "",
   "id": "addition;error-result-for-any-invalid-number;;2",
@@ -746,7 +500,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 42,
+  "line": 32,
   "name": "I have any invalid numbers 1 a",
   "matchedColumns": [
     0,
@@ -755,13 +509,13 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 43,
+  "line": 33,
   "name": "I send a request to the service with above numbers",
   "keyword": "When "
 });
 formatter.step({
-  "line": 44,
-  "name": "I get successful response with status code \u0027400\u0027",
+  "line": 34,
+  "name": "I get bad request error response with status code \u0027400\u0027",
   "keyword": "Then "
 });
 formatter.match({
@@ -774,27 +528,27 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyInvalidNumbersA(int)"
 });
 formatter.result({
-  "duration": 13736233,
+  "duration": 6085117,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 5866171,
-  "error_message": "org.springframework.web.client.HttpClientErrorException: 400 null\n\tat org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:63)\n\tat org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)\n\tat org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)\n\tat org.springframework.web.client.RestTemplate.execute(RestTemplate.java:621)\n\tat org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:540)\n\tat stepdefinitions.AdditionSteps.iSendARequestToTheServiceWithAboveNumbers(AdditionSteps.java:68)\n\tat ✽.When I send a request to the service with above numbers(addition.feature:43)\n",
-  "status": "failed"
+  "duration": 6569083,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "400",
-      "offset": 44
+      "offset": 51
     }
   ],
-  "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
+  "location": "AdditionSteps.iGetBadRequestErrorResponseWithStatusCode(int)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 84355,
+  "status": "passed"
 });
 });

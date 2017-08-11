@@ -1,6 +1,6 @@
 @addition 
 Feature: Addition 
-	As manager of LightBox
+As manager of LightBox
 I want to build a service to add two numbers
 so that I dont need to use a calculator
 
@@ -14,16 +14,6 @@ Scenario Outline: Valid result for addition of two numbers
 		|1|1|2|
 		|2|1|3|
 		|-1|-1|-2|		
-		
-Scenario Outline: Invalid result for addition of two numbers 
-	Given I have any two valid numbers <firstnumber> <secondnumber> 
-	When I send a request to the service with above numbers 
-	Then I get successful response with status code '200' 
-	And The sum of two numbers is not equal to <sum> 
-	Examples: 
-		|firstnumber|secondnumber|sum|
-		|1|1|3|
-		|2|1|5|
 		
 Scenario: Successful response type is of XML format 
 	Given I have any two valid numbers '1' '2'
@@ -41,7 +31,7 @@ Scenario: Successful response type is of XML format
 Scenario Outline: Error result for any invalid number
 	Given I have any invalid numbers <firstnumber> <secondnumber> 
 	When I send a request to the service with above numbers 
-	Then I get successful response with status code '400'
+	Then I get bad request error response with status code '400'
 	Examples: 
 	|firstnumber|secondnumber|sum|
 	|1|a|2|

@@ -17,7 +17,11 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestTemplate;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -37,6 +41,7 @@ public class AdditionSteps {
 	private RestTemplate restTemplate = new RestTemplate();
 	private HashMap<String, Object> numberList = new HashMap<String, Object>();;
 	private ResponseEntity<String> response;
+	private int badrequest;
 
 	@Given("^I have any two valid numbers (-?\\d+) (-?\\d+)$")
 	public void iHaveAnyTwoValidNumbers(Object firstnumber, Object secondnumber) throws Throwable {
@@ -63,9 +68,14 @@ public class AdditionSteps {
 	}
 
 	@When("^I send a request to the service with above numbers$")
-	public void iSendARequestToTheServiceWithAboveNumbers() throws Throwable {
-		HttpEntity<String> entity = new HttpEntity<String>(new HttpHeaders());
-		response = restTemplate.exchange(baseUri, HttpMethod.GET, entity, String.class, numberList);
+	public void iSendARequestToTheServiceWithAboveNumbers() throws Exception {
+		HttpHeaders headers = new HttpHeaders();
+		HttpEntity<String> entity = new HttpEntity<String>(headers);
+		try {
+			response = restTemplate.exchange(baseUri, HttpMethod.GET, entity, String.class, numberList);
+		} catch (final HttpClientErrorException httpClientErrorException) {
+			badrequest=httpClientErrorException.getStatusCode().value();
+		}
 	}
 
 	@Then("^I get successful response with status code '(\\d+)'$")
@@ -83,6 +93,11 @@ public class AdditionSteps {
 	public void theSumOfTwoNumbersIsNotEqualTo(int sum) throws Throwable {
 		String result = DocumentParser(response.getBody());
 		assertThat(sum, is(not(equalTo(result))));
+	}
+
+	@Then("^I get bad request error response with status code '(\\d+)'$")
+	public void iGetBadRequestErrorResponseWithStatusCode(int statuscode) throws Throwable {
+		assertThat(statuscode, is(equalTo(badrequest)));
 	}
 
 	private String DocumentParser(String xml) throws SAXException, IOException, ParserConfigurationException {

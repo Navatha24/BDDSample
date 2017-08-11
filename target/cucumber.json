@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 252722187,
+              "duration": 255163842,
               "status": "passed"
             },
             "line": 8,
@@ -38,7 +38,7 @@
           },
           {
             "result": {
-              "duration": 78367187,
+              "duration": 82833291,
               "status": "passed"
             },
             "line": 9,
@@ -50,7 +50,7 @@
           },
           {
             "result": {
-              "duration": 3759064,
+              "duration": 3191237,
               "status": "passed"
             },
             "line": 10,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 78979896,
+              "duration": 84037338,
               "status": "passed"
             },
             "line": 11,
@@ -105,7 +105,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6310842,
+              "duration": 6397538,
               "status": "passed"
             },
             "line": 8,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 3295080,
+              "duration": 3638517,
               "status": "passed"
             },
             "line": 9,
@@ -143,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 119249,
+              "duration": 98624,
               "status": "passed"
             },
             "line": 10,
@@ -161,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 1091802,
+              "duration": 1273974,
               "status": "passed"
             },
             "line": 11,
@@ -198,7 +198,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5194137,
+              "duration": 6040158,
               "status": "passed"
             },
             "line": 8,
@@ -224,7 +224,7 @@
           },
           {
             "result": {
-              "duration": 2600414,
+              "duration": 2575582,
               "status": "passed"
             },
             "line": 9,
@@ -236,7 +236,7 @@
           },
           {
             "result": {
-              "duration": 86778,
+              "duration": 86397,
               "status": "passed"
             },
             "line": 10,
@@ -254,7 +254,7 @@
           },
           {
             "result": {
-              "duration": 887569,
+              "duration": 1587148,
               "status": "passed"
             },
             "line": 11,
@@ -282,193 +282,7 @@
         ]
       },
       {
-        "line": 25,
-        "name": "Invalid result for addition of two numbers",
-        "description": "",
-        "id": "addition;invalid-result-for-addition-of-two-numbers;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5653004,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I have any two valid numbers 1 1",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 29
-                },
-                {
-                  "val": "1",
-                  "offset": 31
-                }
-              ],
-              "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2594209,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I send a request to the service with above numbers",
-            "match": {
-              "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 84551,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I get successful response with status code \u0027200\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 44
-                }
-              ],
-              "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2740233,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "The sum of two numbers is not equal to 3",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3",
-                  "offset": 39
-                }
-              ],
-              "location": "AdditionSteps.theSumOfTwoNumbersIsNotEqualTo(int)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@addition"
-          }
-        ]
-      },
-      {
-        "line": 26,
-        "name": "Invalid result for addition of two numbers",
-        "description": "",
-        "id": "addition;invalid-result-for-addition-of-two-numbers;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5977531,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I have any two valid numbers 2 1",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 29
-                },
-                {
-                  "val": "1",
-                  "offset": 31
-                }
-              ],
-              "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2281023,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I send a request to the service with above numbers",
-            "match": {
-              "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 92139,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I get successful response with status code \u0027200\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 44
-                }
-              ],
-              "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 945128,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "The sum of two numbers is not equal to 5",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 39
-                }
-              ],
-              "location": "AdditionSteps.theSumOfTwoNumbersIsNotEqualTo(int)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@addition"
-          }
-        ]
-      },
-      {
-        "line": 28,
+        "line": 18,
         "name": "Successful response type is of XML format",
         "description": "",
         "id": "addition;successful-response-type-is-of-xml-format",
@@ -477,10 +291,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5300441,
+              "duration": 5195197,
               "status": "passed"
             },
-            "line": 29,
+            "line": 19,
             "name": "I have any two valid numbers \u00271\u0027 \u00272\u0027",
             "match": {
               "arguments": [
@@ -499,10 +313,10 @@
           },
           {
             "result": {
-              "duration": 2402952,
+              "duration": 3432649,
               "status": "passed"
             },
-            "line": 30,
+            "line": 20,
             "name": "I send a request to the service with above numbers",
             "match": {
               "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
@@ -511,10 +325,10 @@
           },
           {
             "result": {
-              "duration": 83288,
+              "duration": 112505,
               "status": "passed"
             },
-            "line": 31,
+            "line": 21,
             "name": "I get successful response with status code \u0027200\u0027",
             "match": {
               "arguments": [
@@ -529,10 +343,10 @@
           },
           {
             "result": {
-              "duration": 99059,
+              "duration": 105897,
               "status": "passed"
             },
-            "line": 32,
+            "line": 22,
             "name": "The response type is in XML format:",
             "match": {
               "location": "AdditionSteps.theResponseTypeIsInXMLFormat(String)"
@@ -540,14 +354,14 @@
             "keyword": "And ",
             "doc_string": {
               "content_type": "",
-              "line": 33,
+              "line": 23,
               "value": "\u003cAddition\u003e\n\u003cfirstnumber\u003e1\u003c/firstnumber\u003e\n\u003csecondnumber\u003e2\u003c/secondnumber\u003e\n\u003cresult\u003e3\u003c/result\u003e\n\u003c/Addition\u003e"
             }
           }
         ]
       },
       {
-        "line": 47,
+        "line": 37,
         "name": "Error result for any invalid number",
         "description": "",
         "id": "addition;error-result-for-any-invalid-number;;2",
@@ -556,10 +370,10 @@
         "steps": [
           {
             "result": {
-              "duration": 13736233,
+              "duration": 6085117,
               "status": "passed"
             },
-            "line": 42,
+            "line": 32,
             "name": "I have any invalid numbers 1 a",
             "match": {
               "arguments": [
@@ -578,11 +392,10 @@
           },
           {
             "result": {
-              "duration": 5866171,
-              "error_message": "org.springframework.web.client.HttpClientErrorException: 400 null\n\tat org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:63)\n\tat org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:700)\n\tat org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:653)\n\tat org.springframework.web.client.RestTemplate.execute(RestTemplate.java:621)\n\tat org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:540)\n\tat stepdefinitions.AdditionSteps.iSendARequestToTheServiceWithAboveNumbers(AdditionSteps.java:68)\n\tat ✽.When I send a request to the service with above numbers(addition.feature:43)\n",
-              "status": "failed"
+              "duration": 6569083,
+              "status": "passed"
             },
-            "line": 43,
+            "line": 33,
             "name": "I send a request to the service with above numbers",
             "match": {
               "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
@@ -591,18 +404,19 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 84355,
+              "status": "passed"
             },
-            "line": 44,
-            "name": "I get successful response with status code \u0027400\u0027",
+            "line": 34,
+            "name": "I get bad request error response with status code \u0027400\u0027",
             "match": {
               "arguments": [
                 {
                   "val": "400",
-                  "offset": 44
+                  "offset": 51
                 }
               ],
-              "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
+              "location": "AdditionSteps.iGetBadRequestErrorResponseWithStatusCode(int)"
             },
             "keyword": "Then "
           }
