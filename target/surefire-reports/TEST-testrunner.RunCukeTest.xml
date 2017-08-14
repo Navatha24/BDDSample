@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testrunner.RunCukeTest" time="0.874" tests="24" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testrunner.RunCukeTest" time="1.052" tests="24" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
@@ -62,11 +62,11 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="Given I have any two valid numbers 1 1" classname="| 1 | 1 | 2 |" time="0"/>
+  <testcase name="Given I have any two valid numbers 1 1" classname="| 1 | 1 | 2 |" time="0.001"/>
   <testcase name="When I send a request to the service with above numbers" classname="| 1 | 1 | 2 |" time="0"/>
   <testcase name="Then I get successful response with status code &apos;200&apos;" classname="| 1 | 1 | 2 |" time="0"/>
   <testcase name="And The sum of two numbers is 2" classname="| 1 | 1 | 2 |" time="0"/>
-  <testcase name="| 1 | 1 | 2 |" classname="| 1 | 1 | 2 |" time="0"/>
+  <testcase name="| 1 | 1 | 2 |" classname="| 1 | 1 | 2 |" time="0.001"/>
   <testcase name="Given I have any two valid numbers 2 1" classname="| 2 | 1 | 3 |" time="0"/>
   <testcase name="When I send a request to the service with above numbers" classname="| 2 | 1 | 3 |" time="0"/>
   <testcase name="Then I get successful response with status code &apos;200&apos;" classname="| 2 | 1 | 3 |" time="0"/>
@@ -85,5 +85,5 @@
   <testcase name="Given I have any invalid numbers 1 a" classname="| 1 | a | 2 |" time="0"/>
   <testcase name="When I send a request to the service with above numbers" classname="| 1 | a | 2 |" time="0"/>
   <testcase name="Then I get bad request error response with status code &apos;400&apos;" classname="| 1 | a | 2 |" time="0"/>
-  <testcase name="| 1 | a | 2 |" classname="| 1 | a | 2 |" time="0.001"/>
+  <testcase name="| 1 | a | 2 |" classname="| 1 | a | 2 |" time="0"/>
 </testsuite>

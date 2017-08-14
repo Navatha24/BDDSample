@@ -140,14 +140,14 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
 });
 formatter.result({
-  "duration": 255163842,
+  "duration": 252347056,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 82833291,
+  "duration": 228956569,
   "status": "passed"
 });
 formatter.match({
@@ -160,7 +160,7 @@ formatter.match({
   "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
 });
 formatter.result({
-  "duration": 3191237,
+  "duration": 3260750,
   "status": "passed"
 });
 formatter.match({
@@ -173,7 +173,7 @@ formatter.match({
   "location": "AdditionSteps.theSumOfTwoNumbersIs(String)"
 });
 formatter.result({
-  "duration": 84037338,
+  "duration": 101623538,
   "status": "passed"
 });
 formatter.scenario({
@@ -231,14 +231,14 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
 });
 formatter.result({
-  "duration": 6397538,
+  "duration": 6079600,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 3638517,
+  "duration": 4481488,
   "status": "passed"
 });
 formatter.match({
@@ -251,7 +251,7 @@ formatter.match({
   "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
 });
 formatter.result({
-  "duration": 98624,
+  "duration": 119877,
   "status": "passed"
 });
 formatter.match({
@@ -264,7 +264,7 @@ formatter.match({
   "location": "AdditionSteps.theSumOfTwoNumbersIs(String)"
 });
 formatter.result({
-  "duration": 1273974,
+  "duration": 1114433,
   "status": "passed"
 });
 formatter.scenario({
@@ -322,14 +322,14 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyTwoValidNumbers(Object,Object)"
 });
 formatter.result({
-  "duration": 6040158,
+  "duration": 5808144,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 2575582,
+  "duration": 3635998,
   "status": "passed"
 });
 formatter.match({
@@ -342,7 +342,7 @@ formatter.match({
   "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
 });
 formatter.result({
-  "duration": 86397,
+  "duration": 82841,
   "status": "passed"
 });
 formatter.match({
@@ -355,7 +355,7 @@ formatter.match({
   "location": "AdditionSteps.theSumOfTwoNumbersIs(String)"
 });
 formatter.result({
-  "duration": 1587148,
+  "duration": 819102,
   "status": "passed"
 });
 formatter.scenario({
@@ -405,14 +405,14 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyTwoValidNumbers(int,int)"
 });
 formatter.result({
-  "duration": 5195197,
+  "duration": 5393407,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 3432649,
+  "duration": 3622434,
   "status": "passed"
 });
 formatter.match({
@@ -425,14 +425,14 @@ formatter.match({
   "location": "AdditionSteps.iGetSuccessfulResponseWithStatusCode(int)"
 });
 formatter.result({
-  "duration": 112505,
+  "duration": 134989,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.theResponseTypeIsInXMLFormat(String)"
 });
 formatter.result({
-  "duration": 105897,
+  "duration": 120802,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -528,14 +528,14 @@ formatter.match({
   "location": "AdditionSteps.iHaveAnyInvalidNumbersA(int)"
 });
 formatter.result({
-  "duration": 6085117,
+  "duration": 7171131,
   "status": "passed"
 });
 formatter.match({
   "location": "AdditionSteps.iSendARequestToTheServiceWithAboveNumbers()"
 });
 formatter.result({
-  "duration": 6569083,
+  "duration": 25417375,
   "status": "passed"
 });
 formatter.match({
@@ -548,7 +548,7 @@ formatter.match({
   "location": "AdditionSteps.iGetBadRequestErrorResponseWithStatusCode(int)"
 });
 formatter.result({
-  "duration": 84355,
+  "duration": 87422,
   "status": "passed"
 });
 });

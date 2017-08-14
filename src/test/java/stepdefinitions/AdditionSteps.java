@@ -41,7 +41,7 @@ public class AdditionSteps {
 	private RestTemplate restTemplate = new RestTemplate();
 	private HashMap<String, Object> numberList = new HashMap<String, Object>();;
 	private ResponseEntity<String> response;
-	private int badrequest;
+	private int errorstatuscode;
 
 	@Given("^I have any two valid numbers (-?\\d+) (-?\\d+)$")
 	public void iHaveAnyTwoValidNumbers(Object firstnumber, Object secondnumber) throws Throwable {
@@ -74,7 +74,7 @@ public class AdditionSteps {
 		try {
 			response = restTemplate.exchange(baseUri, HttpMethod.GET, entity, String.class, numberList);
 		} catch (final HttpClientErrorException httpClientErrorException) {
-			badrequest=httpClientErrorException.getStatusCode().value();
+			errorstatuscode=httpClientErrorException.getStatusCode().value();
 		}
 	}
 
@@ -97,7 +97,7 @@ public class AdditionSteps {
 
 	@Then("^I get bad request error response with status code '(\\d+)'$")
 	public void iGetBadRequestErrorResponseWithStatusCode(int statuscode) throws Throwable {
-		assertThat(statuscode, is(equalTo(badrequest)));
+		assertThat(statuscode, is(equalTo(errorstatuscode)));
 	}
 
 	private String DocumentParser(String xml) throws SAXException, IOException, ParserConfigurationException {
